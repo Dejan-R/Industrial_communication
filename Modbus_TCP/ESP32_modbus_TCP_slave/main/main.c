@@ -2,6 +2,12 @@
 
 primjer: ESP32 - Modbus TCP slave over Wi-Fi
 
+cd components
+git clone --recursive https://github.com/espressif/esp-modbus.git esp_modbus
+
+idf.py reconfigure
+idf.py build flash monitor
+
 https://github.com/espressif/esp-idf/tree/v5.4/examples/protocols/modbus/tcp/mb_tcp_slave
 */
 #include <stdio.h>
